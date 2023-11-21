@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="error-msg"></div>
+    <form id="formData">
+        <legend>Registration Form</legend>
+        <div class="container">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="container">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="container">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree">Accept Terms and Conditions</label>
+        </div>
+        <button type="submit" id="submit">submit</button>
+    </form>
+    <div class="userinfo">
+        <h3>Submitted Details</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Dob</th>
+                    <th>Accepted terms?</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
